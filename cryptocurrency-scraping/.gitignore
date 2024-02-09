@@ -1,0 +1,24 @@
+# Ignorer les fichiers et dossiers générés par Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+.env
+*.git
+
+# Ignorer le dossier de l'environnement virtuel
+venv/
+
+# Ignorer les fichiers et dossiers générés par des éditeurs de texte
+*.swp
+*.swo
+*.swn
+.idea/
+*.vscode/
+
+# Ignorer les fichiers de système d'exploitation
+.DS_Store
+Thumbs.db

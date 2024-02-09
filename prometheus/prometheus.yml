@@ -1,0 +1,14 @@
+scrape_configs:
+  - job_name: prometheus
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+    static_configs:
+      - targets: [ "localhost:9090" ]
+  - job_name: docker
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+    static_configs:
+      - targets: [ "host.docker.internal:9323" ]
+  - job_name: 'kafka'
+    static_configs:
+      - targets: [ 'kafka:5555' ]

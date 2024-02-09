@@ -1,0 +1,16 @@
+# Ignorer les fichiers et dossiers générés par des éditeurs de texte
+*.swp
+*.swo
+*.swn
+*.idea/
+*.vscode/
+* venv/
+
+# Ignorer les fichiers de système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers généré par Spark 
+spark-checkpoints/*
+spark-scripts/metrics/*
+

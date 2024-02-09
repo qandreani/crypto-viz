@@ -1,0 +1,20 @@
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB_v2_Flux
+    type: influxdb
+    access: proxy
+    uid: "ca6ef7a9-5232-4241-9f45-20e8cb3aff4f"
+    url: http://influxdb:8086
+    jsonData:
+      version: Flux
+      organization: myorg
+      defaultBucket: mybucket
+      tlsSkipVerify: true
+    secureJsonData:
+      token: mytoken
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    uid: "admin"
+    url: http://prometheus:9090
